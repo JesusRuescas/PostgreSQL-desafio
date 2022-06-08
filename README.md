@@ -8,7 +8,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
 
-<p align="left"> <img src="[https://komarev.com/ghpvc/?username=jesusruescas&label=Views&color=blue&style=plastic](https://c.tenor.com/yfRbDajBsC8AAAAC/spongebob-database.gif)" alt="jesusruescas" /> </p>
+<p align="left"> <img src="https://c.tenor.com/yfRbDajBsC8AAAAC/spongebob-database.gif" alt="jesusruescas" /> </p>
 
 > Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler.
 
