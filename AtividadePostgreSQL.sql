@@ -2,9 +2,9 @@ CREATE TABLE Livros
 (
     L_id SERIAL PRIMARY KEY,
     nome  VARCHAR(255),
-	ano DATE,
+    ano DATE,
     reserva INTEGER,
-	prateleira INTEGER
+    prateleira INTEGER
 );
     INSERT INTO Livros (nome, ano, reserva, prateleira) VALUES('Código Limpo','1999-07-05', 20, 1);
     INSERT INTO Livros (nome, ano, reserva, prateleira) VALUES('Desenvolvimento Ágil Limpo','2011-04-12',13, 1);
@@ -14,8 +14,8 @@ CREATE TABLE Livros
 
     SELECT * FROM Livros ORDER BY reserva DESC;
 	
-	SELECT L_id, nome, ano, reserva, prateleira FROM Livros livro, (SELECT AVG(reserva) media, prateleira prateleiramedia FROM Livros 
-	GROUP BY prateleira) mediareserva WHERE livro.prateleira = mediareserva.prateleiramedia AND livro.reserva >= mediareserva.media
+    SELECT L_id, nome, ano, reserva, prateleira FROM Livros livro, (SELECT AVG(reserva) media, prateleira prateleiramedia FROM Livros 
+    GROUP BY prateleira) mediareserva WHERE livro.prateleira = mediareserva.prateleiramedia AND livro.reserva >= mediareserva.media
 ###############################################################################################################################################################################
 CREATE TABLE Mentores
 (
@@ -28,7 +28,7 @@ CREATE TABLE Mentores
     INSERT INTO Mentores(nome, turma) VALUES ('Susan', 'Five Academy');
     INSERT INTO Mentores(nome, turma) VALUES ('Fernando', 'Five Academy');
 	
-	SELECT * FROM Mentores
+    SELECT * FROM Mentores
 ###############################################################################################################################################################################
 CREATE TABLE Postagens(
     P_id SERIAL PRIMARY KEY,
@@ -41,7 +41,7 @@ CREATE TABLE Postagens(
     INSERT INTO Postagens(M_id, texto) VALUES (3, 'Scrum');
     INSERT INTO Postagens(M_id, texto) VALUES (4, 'PostgreSQL');
 	
-	SELECT * FROM Postagens
+    SELECT * FROM Postagens
 ###############################################################################################################################################################################
 CREATE TABLE Curtidas(
     M_id SERIAL,
@@ -55,14 +55,14 @@ CREATE TABLE Curtidas(
     INSERT INTO Curtidas(M_id, P_id, curtidas) VALUES (3,2,15);
     INSERT INTO Curtidas(M_id, P_id, curtidas) VALUES (4,1,3);
 	
-	SELECT * FROM Curtidas
+    SELECT * FROM Curtidas
 ###############################################################################################################################################################################   
-	SELECT nome, curtidas FROM Mentores, Curtidas WHERE Mentores.M_id = Curtidas.M_id GROUP BY(nome, curtidas) ORDER BY Curtidas DESC
+    SELECT nome, curtidas FROM Mentores, Curtidas WHERE Mentores.M_id = Curtidas.M_id GROUP BY(nome, curtidas) ORDER BY Curtidas DESC
 	
-	SELECT L_id, nome, ano, reserva, prateleira FROM Livros livro, (SELECT AVG(reserva) media, prateleira prateleiramedia FROM Livros 
-	GROUP BY prateleira) mediareserva WHERE livro.prateleira = mediareserva.prateleiramedia AND livro.reserva >= mediareserva.media
+    SELECT L_id, nome, ano, reserva, prateleira FROM Livros livro, (SELECT AVG(reserva) media, prateleira prateleiramedia FROM Livros 
+    GROUP BY prateleira) mediareserva WHERE livro.prateleira = mediareserva.prateleiramedia AND livro.reserva >= mediareserva.media
     
-	SELECT turma, P_id FROM Mentores INNER JOIN Curtidas ON Mentores.M_id = Curtidas.M_id ORDER BY turma;
+    SELECT turma, P_id FROM Mentores INNER JOIN Curtidas ON Mentores.M_id = Curtidas.M_id ORDER BY turma;
     
-	SELECT turma, ROUND( AVG(P_id)::numeric, 2 ) AS media FROM Mentores INNER JOIN Curtidas ON Mentores.M_id = Curtidas.M_id GROUP BY(turma);
+    SELECT turma, ROUND( AVG(P_id)::numeric, 2 ) AS media FROM Mentores INNER JOIN Curtidas ON Mentores.M_id = Curtidas.M_id GROUP BY(turma);
 ############################################################################################################################################################################### 
