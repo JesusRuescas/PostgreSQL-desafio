@@ -32,7 +32,7 @@ CREATE TABLE Mentores
 ###############################################################################################################################################################################
 CREATE TABLE Postagens(
     P_id SERIAL PRIMARY KEY,
-    M_id INTEGER,
+    M_id SERIAL,
     texto VARCHAR(255), 
     FOREIGN KEY (M_id) REFERENCES Mentores(M_id)
 );
@@ -44,8 +44,8 @@ CREATE TABLE Postagens(
 	SELECT * FROM Postagens
 ###############################################################################################################################################################################
 CREATE TABLE Curtidas(
-    M_id INTEGER,
-    P_id INTEGER,
+    M_id SERIAL,
+    P_id SERIAL,
 	curtidas INTEGER,
     FOREIGN KEY (M_id) REFERENCES Mentores(M_id),
     FOREIGN KEY (P_id) REFERENCES Postagens(P_id)
