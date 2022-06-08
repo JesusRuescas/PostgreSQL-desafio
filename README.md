@@ -1,5 +1,4 @@
 # PostgreSQL desafio
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=jesusruescas&label=Views&color=blue&style=plastic" alt="jesusruescas" /> </p>
 
 <p align="left"> <img src="https://c.tenor.com/yfRbDajBsC8AAAAC/spongebob-database.gif" alt="jesusruescas" /> </p>
 
@@ -22,3 +21,11 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Você instalou a versão mais recente de `PostgreSQL`
 * Você instalou a versão mais recente de `PgAdmin4`
 * Conhecimento em `PostgreSQL`
+
+<div> 
+  <a href = "mailto:jrj_business@outlook.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/JesusRuescas" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+ 
+ ![Snake animation](https://github.com/JesusRuescas/JesusRuescas/blob/output/github-contribution-grid-snake.svg)
+ 
+</div>
