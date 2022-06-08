@@ -19,6 +19,6 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 <!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
-* Você instalou a versão mais recente de `<PostgreSQL>`
-* Você instalou a versão mais recente de `<PgAdmin4>`
-* Conhecimento em `<PostgreSQL>`
+* Você instalou a versão mais recente de `PostgreSQL`
+* Você instalou a versão mais recente de `PgAdmin4`
+* Conhecimento em `PostgreSQL`
