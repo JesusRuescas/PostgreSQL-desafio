@@ -1,5 +1,5 @@
 # PostgreSQL desafio
-
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=jesusruescas&label=Views&color=blue&style=plastic" alt="jesusruescas" /> </p>
 
 <p align="left"> <img src="https://c.tenor.com/yfRbDajBsC8AAAAC/spongebob-database.gif" alt="jesusruescas" /> </p>
 
